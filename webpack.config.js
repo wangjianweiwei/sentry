@@ -13,6 +13,7 @@ const CompressionPlugin = require('compression-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const CopyPlugin = require('copy-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 const babelConfig = require('./babel.config');
 
@@ -230,7 +231,7 @@ let appConfig = {
           {
             loader: 'ts-loader',
             options: {
-              transpileOnly: false,
+              transpileOnly: true,
             },
           },
         ],
@@ -316,6 +317,10 @@ let appConfig = {
      * This removes empty js files for style only entries (e.g. sentry.less)
      */
     new FixStyleOnlyEntriesPlugin(),
+
+    new ForkTsCheckerWebpackPlugin({
+      tsconfig: path.resolve(__dirname, './tsconfig.json'),
+    }),
 
     ...localeRestrictionPlugins,
   ],
