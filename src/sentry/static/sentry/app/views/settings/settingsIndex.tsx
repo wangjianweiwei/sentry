@@ -243,7 +243,7 @@ class SettingsIndex extends React.Component<Props> {
                   </li>
                   <li>
                     <HomeLink to={`${organizationSettingsUrl}developer-settings/`}>
-                      {t('Integrations')}
+                      {t('Your Integrations')}
                     </HomeLink>
                   </li>
                   <li>
