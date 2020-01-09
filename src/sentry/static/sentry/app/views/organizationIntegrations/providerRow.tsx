@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-restricted-imports
-import {Box, Flex} from 'grid-emotion';
 import {withTheme} from 'emotion-theming';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -114,24 +112,40 @@ export default class ProviderRow extends React.Component<Props> {
   render() {
     return (
       <PanelItem p={0} direction="column" data-test-id={this.props.provider.key}>
-        <Flex align="center" p={2}>
+        <PanelItemFlex>
           <PluginIcon size={36} pluginId={this.props.provider.key} />
-          <Box px={2} flex={1}>
+          <ProviderBox>
             <ProviderName>{this.props.provider.name}</ProviderName>
             <ProviderDetails>
               <Status enabled={this.isEnabled} />
               <StyledLink onClick={this.openModal}>Learn More</StyledLink>
             </ProviderDetails>
-          </Box>
+          </ProviderBox>
           <Box>
             <Button size="small" onClick={this.openModal} {...this.buttonProps} />
           </Box>
-        </Flex>
+        </PanelItemFlex>
         {this.renderIntegrations()}
       </PanelItem>
     );
   }
 }
+
+const Flex = styled('div')`
+  display: flex;
+`;
+const Box = styled('div')``;
+
+const PanelItemFlex = styled(Flex)`
+  align-items: 'center';
+  padding: ${space(2)};
+`;
+
+const ProviderBox = styled(Box)`
+  padding-right: ${space(2)};
+  padding-left: ${space(2)};
+  flex: 1;
+`;
 
 const ProviderName = styled('div')`
   font-weight: bold;
@@ -143,6 +157,9 @@ const ProviderDetails = styled(Flex)`
   font-size: 0.8em;
 `;
 
+const StatusContainer = styled(Flex)`
+  align-items: center;
+`;
 type StatusProps = {
   enabled: boolean;
   theme?: any; //TS complains if we don't make this optional
@@ -152,14 +169,14 @@ const Status = styled(
   withTheme((props: StatusProps) => {
     const {enabled, ...p} = props;
     return (
-      <Flex align="center">
+      <StatusContainer>
         <CircleIndicator
           enabled={enabled}
           size={6}
           color={enabled ? p.theme.success : p.theme.gray2}
         />
         <div {...p}>{enabled ? t('Installed') : t('Not Installed')}</div>
-      </Flex>
+      </StatusContainer>
     );
   })
 )`
