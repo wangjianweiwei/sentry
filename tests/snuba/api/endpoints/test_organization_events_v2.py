@@ -6,7 +6,6 @@ from django.core.urlresolvers import reverse
 from sentry.testutils import APITestCase, SnubaTestCase
 from sentry.testutils.helpers.datetime import before_now, iso_format
 from sentry.utils.samples import load_data
-import pytest
 
 
 class OrganizationEventsV2EndpointTest(APITestCase, SnubaTestCase):
@@ -59,7 +58,9 @@ class OrganizationEventsV2EndpointTest(APITestCase, SnubaTestCase):
         )
 
         with self.feature("organizations:events-v2"):
-            response = self.client.get(self.url, {"query": "hi \n there"}, format="json")
+            response = self.client.get(
+                self.url, {"field": ["id"], "query": "hi \n there"}, format="json"
+            )
 
         assert response.status_code == 400, response.content
         assert (
@@ -321,7 +322,6 @@ class OrganizationEventsV2EndpointTest(APITestCase, SnubaTestCase):
         assert data[1]["count_id"] == 2
         assert data[1]["count_unique_user"] == 2
 
-    @pytest.mark.xfail(reason="aggregate comparisons need parser improvements")
     def test_aggregation_comparison(self):
         self.login_as(user=self.user)
         project = self.create_project()
@@ -376,21 +376,19 @@ class OrganizationEventsV2EndpointTest(APITestCase, SnubaTestCase):
                 self.url,
                 format="json",
                 data={
-                    "field": ["issue_title", "count(id)", "count_unique(user)"],
-                    "query": "count_id:>1 count_unique_user:>1",
-                    "orderby": "issue_title",
+                    "field": ["issue.id", "count(id)", "count_unique(user)"],
+                    "query": "count(id):>1 count_unique(user):>1",
+                    "orderby": "issue.id",
                 },
             )
 
         assert response.status_code == 200, response.content
-
         assert len(response.data["data"]) == 1
         data = response.data["data"]
         assert data[0]["issue.id"] == event.group_id
         assert data[0]["count_id"] == 2
         assert data[0]["count_unique_user"] == 2
 
-    @pytest.mark.xfail(reason="aggregate comparisons need parser improvements")
     def test_aggregation_comparison_with_conditions(self):
         self.login_as(user=self.user)
         project = self.create_project()
@@ -404,7 +402,7 @@ class OrganizationEventsV2EndpointTest(APITestCase, SnubaTestCase):
             },
             project_id=project.id,
         )
-        event = self.store_event(
+        self.store_event(
             data={
                 "event_id": "b" * 32,
                 "timestamp": self.min_ago,
@@ -414,7 +412,7 @@ class OrganizationEventsV2EndpointTest(APITestCase, SnubaTestCase):
             },
             project_id=project.id,
         )
-        self.store_event(
+        event = self.store_event(
             data={
                 "event_id": "c" * 32,
                 "timestamp": self.min_ago,
@@ -440,9 +438,9 @@ class OrganizationEventsV2EndpointTest(APITestCase, SnubaTestCase):
                 self.url,
                 format="json",
                 data={
-                    "field": ["issue_title", "count(id)"],
-                    "query": "count_id:>1 user.email:foo@example.com environment:prod",
-                    "orderby": "issue_title",
+                    "field": ["issue.id", "count(id)"],
+                    "query": "count(id):>1 user.email:foo@example.com environment:prod",
+                    "orderby": "issue.id",
                 },
             )
 

@@ -134,6 +134,7 @@ def resolve_column(col):
         return col
     if col.startswith("tags[") or QUOTED_LITERAL_RE.match(col):
         return col
+
     return DISCOVER_COLUMN_MAP.get(col, u"tags[{}]".format(col))
 
 
@@ -278,6 +279,9 @@ def query(
     referrer (str|None) A referrer string to help locate the origin of this query.
     auto_fields (bool) Set to true to have project + eventid fields automatically added.
     """
+    if not selected_columns:
+        raise InvalidSearchQuery("No fields provided")
+
     snuba_filter = get_filter(query, params)
 
     # TODO(mark) Refactor the need for this translation shim once all of
@@ -288,10 +292,10 @@ def query(
         "end": snuba_filter.end,
         "conditions": snuba_filter.conditions,
         "filter_keys": snuba_filter.filter_keys,
+        "having": snuba_filter.having,
         "orderby": orderby,
     }
-    if not selected_columns:
-        raise InvalidSearchQuery("No fields provided")
+
     snuba_args.update(resolve_field_list(selected_columns, snuba_args, auto_fields=auto_fields))
 
     if reference_event:
@@ -310,6 +314,7 @@ def query(
         aggregations=snuba_args.get("aggregations"),
         selected_columns=snuba_args.get("selected_columns"),
         filter_keys=snuba_args.get("filter_keys"),
+        having=snuba_args.get("having"),
         orderby=snuba_args.get("orderby"),
         dataset=Dataset.Discover,
         limit=limit,
