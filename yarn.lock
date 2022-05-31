@@ -3499,10 +3499,10 @@
     "@types/react-dom" "*"
     "@types/react-transition-group" "*"
 
-"@types/react-sparklines@^1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@types/react-sparklines/-/react-sparklines-1.7.1.tgz#475fa88867a304460d426c3ff62f0db9ac14f299"
-  integrity sha512-rRYgCep3k9LfDHKuAgXR2kXlZ2u+PXUNb1Hrcwqt6w35Qza/lJZGb2uA9YKvLuo817/kU5Q410jVSyuVDar8Yg==
+"@types/react-sparklines@^1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@types/react-sparklines/-/react-sparklines-1.7.2.tgz#c14e80623abd3669a10f18d13f6fb9fbdc322f70"
+  integrity sha512-N1GwO7Ri5C5fE8+CxhiDntuSw1qYdGytBuedKrCxWpaojXm4WnfygbdBdc5sXGX7feMxDXBy9MNhxoUTwrMl4A==
   dependencies:
     "@types/react" "*"
 
