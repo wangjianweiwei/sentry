@@ -9519,10 +9519,10 @@ jest-runtime@^27.0.6:
     strip-bom "^4.0.0"
     yargs "^16.0.3"
 
-jest-sentry-environment@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/jest-sentry-environment/-/jest-sentry-environment-1.2.0.tgz#ccc0537cbf48e788b08eabb859ed2bf26a911fea"
-  integrity sha512-QeZ7FHpBJHMZngaiqHoFL3ddbEuZXzgAcc0auRBBkKk/4MLIcI/3wxLLx4w8pKVnmrvTBmmctZlkvuBxurjObA==
+jest-sentry-environment@1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/jest-sentry-environment/-/jest-sentry-environment-1.7.1.tgz#dc78be70c62667a5d70dabb7af24e63acffbc4a9"
+  integrity sha512-EepBhc5IQWa7zM0YqwBfDXkczK70rPXlOeg6fIV6C8UzGDzM9WIlSp5QxjaTsebzgwQS15O/regu6LIlZyzzvg==
 
 jest-serializer@^26.6.2:
   version "26.6.2"
