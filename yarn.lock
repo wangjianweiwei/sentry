@@ -11443,10 +11443,10 @@ pkg-up@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-platformicons@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/platformicons/-/platformicons-4.3.0.tgz#ab579cd48cc6e3126fbd1f1a45779b9b0ff0e587"
-  integrity sha512-eH/mJRiOpDA03Ky65tTw9NNm0b5zWJZvCB5vMIrmtENAh565DC12PN+XmjX+7bpAIvWEmGS4YZD/0FVcfwkIyQ==
+platformicons@^5.3.5:
+  version "5.3.5"
+  resolved "https://registry.yarnpkg.com/platformicons/-/platformicons-5.3.5.tgz#32ac95444e53a713160be9ee9c8f5eec466b56f4"
+  integrity sha512-F8wt/IeA44vaJfGcdGHOZ3KhDtDIxzuy3ONPtne4NJ0fVDklICHDe1IJsrbj+xbRNWsijn2l7yXr7AUfq1yzQQ==
   dependencies:
     "@types/node" "*"
     "@types/react" "^16 || ^17"
