@@ -2051,12 +2051,12 @@
     "@react-aria/utils" "^3.8.2"
     clsx "^1.1.1"
 
-"@react-stately/collections@^3.3.3", "@react-stately/collections@^3.3.4", "@react-stately/collections@^3.4.4", "@react-stately/collections@^3.5.1":
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/@react-stately/collections/-/collections-3.5.1.tgz#502a56658e4859aa7d31bd4b9189879b5b5a0255"
-  integrity sha512-egzVrZC5eFc5RJBpqUkzxd2aJOHZ2T1o7horEi8tAWZkg4YI+AmKrqela4ijVrrB9l1GO9z06qPT1UoPkFrC1w==
+"@react-stately/collections@^3.3.3", "@react-stately/collections@^3.3.4", "@react-stately/collections@^3.5.1", "@react-stately/collections@^3.7.0":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@react-stately/collections/-/collections-3.7.0.tgz#5f032ba5e8b554e90bf1a2077220d2560618dbf7"
+  integrity sha512-xZHJxjGXFe3LUbuNgR1yATBVSIQnm+ItLq2DJZo3JzTtRu3gEwLoRRoapPsBQnC5VsjcaimgoqvT05P0AlvCTQ==
   dependencies:
-    "@react-types/shared" "^3.16.0"
+    "@react-types/shared" "^3.18.0"
     "@swc/helpers" "^0.4.14"
 
 "@react-stately/grid@^3.4.2":
@@ -2121,14 +2121,14 @@
     "@react-types/shared" "^3.16.0"
     "@swc/helpers" "^0.4.14"
 
-"@react-stately/selection@^3.11.0", "@react-stately/selection@^3.11.2":
-  version "3.11.2"
-  resolved "https://registry.yarnpkg.com/@react-stately/selection/-/selection-3.11.2.tgz#15c35dfb386e5218b8106070137a8b3ecded5a8b"
-  integrity sha512-g21Y36xhYkXO3yzz0BYSBqnD38olvEwsJUqBXGZfx//bshMC2FNmI5sRYMAi36stxWbwzBvB01OytxfLLxCXCA==
+"@react-stately/selection@^3.11.2", "@react-stately/selection@^3.13.0":
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/@react-stately/selection/-/selection-3.13.0.tgz#a4efe8ebebd99cc38fa5cfe90c9038bbe155192a"
+  integrity sha512-F6FiB5GIS6wdmDDJtD2ofr+y6ysLHcvHVyUZHm00aEup2hcNjtNx3x4MlFIc3tO1LvxDSIIWXJhPXdB4sb32uw==
   dependencies:
-    "@react-stately/collections" "^3.5.1"
-    "@react-stately/utils" "^3.5.2"
-    "@react-types/shared" "^3.16.0"
+    "@react-stately/collections" "^3.7.0"
+    "@react-stately/utils" "^3.6.0"
+    "@react-types/shared" "^3.18.0"
     "@swc/helpers" "^0.4.14"
 
 "@react-stately/tabs@^3.2.2", "@react-stately/tabs@^3.2.3":
@@ -2151,21 +2151,21 @@
     "@react-types/checkbox" "^3.2.3"
     "@react-types/shared" "^3.8.0"
 
-"@react-stately/tree@^3.2.0", "@react-stately/tree@^3.3.4":
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/@react-stately/tree/-/tree-3.3.4.tgz#2b71436dd7ed3bd42983f4fd29a9417f947876f9"
-  integrity sha512-CBgXvwa9qYBsJuxrAiVgGnm48eSxLe/6OjPMwH1pWf4s383Mx73MbbN4fS0oWDeXBVgdqz5/Xg/p8nvPIvl3WQ==
+"@react-stately/tree@^3.2.0", "@react-stately/tree@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@react-stately/tree/-/tree-3.6.0.tgz#bdcb645ca2e566d0a7e3dc1cdde13b491f34dfc1"
+  integrity sha512-9ekYGaebgMmd2p6PGRzsvr8KsDsDnrJF2uLV1GMq9hBaMxOLN5/dpxgfZGdHWoF3MXgeHeLloqrleMNfO6g64Q==
   dependencies:
-    "@babel/runtime" "^7.6.2"
-    "@react-stately/collections" "^3.4.4"
-    "@react-stately/selection" "^3.11.0"
-    "@react-stately/utils" "^3.5.1"
-    "@react-types/shared" "^3.15.0"
+    "@react-stately/collections" "^3.7.0"
+    "@react-stately/selection" "^3.13.0"
+    "@react-stately/utils" "^3.6.0"
+    "@react-types/shared" "^3.18.0"
+    "@swc/helpers" "^0.4.14"
 
-"@react-stately/utils@^3.2.2", "@react-stately/utils@^3.5.1", "@react-stately/utils@^3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@react-stately/utils/-/utils-3.5.2.tgz#9b5f3bb9ad500bf9c5b636a42988dba60a221669"
-  integrity sha512-639gSKqamPHIEPaApb9ahVJS0HgAqNdVF3tQRoh+Ky6759Mbk6i3HqG4zk4IGQ1tVlYSYZvCckwehF7b2zndMg==
+"@react-stately/utils@^3.2.2", "@react-stately/utils@^3.5.1", "@react-stately/utils@^3.5.2", "@react-stately/utils@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@react-stately/utils/-/utils-3.6.0.tgz#f273e7fcb348254347d2e88c8f0c45571060c207"
+  integrity sha512-rptF7iUWDrquaYvBAS4QQhOBQyLBncDeHF03WnHXAxnuPJXNcr9cXJtjJPGCs036ZB8Q2hc9BGG5wNyMkF5v+Q==
   dependencies:
     "@swc/helpers" "^0.4.14"
 
@@ -2242,10 +2242,10 @@
   dependencies:
     "@react-types/shared" "^3.16.0"
 
-"@react-types/shared@^3.10.0", "@react-types/shared@^3.15.0", "@react-types/shared@^3.16.0", "@react-types/shared@^3.8.0", "@react-types/shared@^3.9.0":
-  version "3.16.0"
-  resolved "https://registry.yarnpkg.com/@react-types/shared/-/shared-3.16.0.tgz#cab7bf0376969d1773480ecb2d6da5aa91391db5"
-  integrity sha512-IQgU4oAEvMwylEvaTsr2XB1G/mAoMe1JFYLD6G78v++oAR9l8o9MQxZ0YSeANDkqTamb2gKezGoT1RxvSKjVxw==
+"@react-types/shared@^3.10.0", "@react-types/shared@^3.15.0", "@react-types/shared@^3.16.0", "@react-types/shared@^3.18.0", "@react-types/shared@^3.8.0", "@react-types/shared@^3.9.0":
+  version "3.18.0"
+  resolved "https://registry.yarnpkg.com/@react-types/shared/-/shared-3.18.0.tgz#4f2bacad5912eba6667695ee3f9e8ac9f79849f7"
+  integrity sha512-WJj7RAPj7NLdR/VzFObgvCju9NMDktWSruSPJ3DrL5qyrrvJoyMW67L4YjNoVp2b7Y+k10E0q4fSMV0PlJoL0w==
 
 "@react-types/tabs@^3.1.5":
   version "3.1.5"
