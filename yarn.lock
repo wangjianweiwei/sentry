@@ -2280,6 +2280,13 @@
   resolved "https://registry.yarnpkg.com/@sentry-internal/react-inspector/-/react-inspector-6.0.1-4.tgz#10758f3461cf2cf48df8c80f0514c55ca18872c5"
   integrity sha512-uL2RyvW8EqDEchnbo8Hu/c4IpBqM3LLxUpZPHs8o40kynerzPset6bC/m5SU124gEhy4PqjdvJ7DhTYR75NetQ==
 
+"@sentry-internal/rrdom@2.27.0":
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/rrdom/-/rrdom-2.27.0.tgz#195631c9436287c27cfa8ded625ed7340164c659"
+  integrity sha512-W8FRfZmiuGvgRH3rHAak0BeuQzdSksvbOby93oglwBk0hLe8D5Eb8lW0uLR0t/bHxqutpYfa0oTtvzBUDAOUPQ==
+  dependencies:
+    "@sentry-internal/rrweb-snapshot" "2.27.0"
+
 "@sentry-internal/rrweb-player@1.106.0":
   version "1.106.0"
   resolved "https://registry.yarnpkg.com/@sentry-internal/rrweb-player/-/rrweb-player-1.106.0.tgz#e57f86a55d513e9ef3e189109fdb3b727690165b"
@@ -2293,6 +2300,19 @@
   resolved "https://registry.yarnpkg.com/@sentry-internal/rrweb-snapshot/-/rrweb-snapshot-1.106.0.tgz#24714d4005a918855eeb09d4deda457198f77caf"
   integrity sha512-jLX6uGAW8StwPlQOScLhERVa6VOPmbQRFdhTx70Flkt0ocxg2vBJSdaI4Efu3jU0mtA0gHR01LB5xd1ODMRXow==
 
+"@sentry-internal/rrweb-snapshot@2.27.0":
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/rrweb-snapshot/-/rrweb-snapshot-2.27.0.tgz#70321c23b6acf43ef33bf72bb505106ef2542031"
+  integrity sha512-+frVokZKJGTSmeUW7RCnxMNejCT6XSrWSdA5mcO6+wClGIW25u250i709ZuwhEpy9YMnZEeVIu8IM9N8i4nP5w==
+
+"@sentry-internal/rrweb-types@2.27.0":
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/rrweb-types/-/rrweb-types-2.27.0.tgz#b4de7c2ce834276c22dd1851586f0a1bc61a6ace"
+  integrity sha512-Xgg5tb0jM6UI6T556GOPDU/1BFH47ozH9xZ2WQEiorC7C9wldVsOXHmYBD8nKDWrMM7m2SXwMDgcIP4NmVTQzw==
+  dependencies:
+    "@sentry-internal/rrweb-snapshot" "2.27.0"
+    "@types/css-font-loading-module" "0.0.7"
+
 "@sentry-internal/rrweb@1.106.0":
   version "1.106.0"
   resolved "https://registry.yarnpkg.com/@sentry-internal/rrweb/-/rrweb-1.106.0.tgz#251026e42cf142119eed0616808a279099aa0573"
@@ -2304,6 +2324,20 @@
     base64-arraybuffer "^1.0.1"
     fflate "^0.4.4"
     mitt "^1.1.3"
+
+"@sentry-internal/rrweb@2.27.0":
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/rrweb/-/rrweb-2.27.0.tgz#444b640c9f3261445a107e69d27fe0a1a9b1007c"
+  integrity sha512-bYpg4NexLukYDJiuQAYtI2wVsDL7xl0cMV3xx6uGY3cUz12xa+bEtweFCUvB6MKIhi/TNcngeD/Ys2HYda9oGA==
+  dependencies:
+    "@sentry-internal/rrdom" "2.27.0"
+    "@sentry-internal/rrweb-snapshot" "2.27.0"
+    "@sentry-internal/rrweb-types" "2.27.0"
+    "@types/css-font-loading-module" "0.0.7"
+    "@xstate/fsm" "^1.4.0"
+    base64-arraybuffer "^1.0.1"
+    fflate "^0.4.4"
+    mitt "^3.0.0"
 
 "@sentry-internal/tracing@7.44.2":
   version "7.44.2"
@@ -8103,6 +8137,11 @@ mitt@^1.1.3:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/mitt/-/mitt-1.2.0.tgz#cb24e6569c806e31bd4e3995787fe38a04fdf90d"
   integrity sha512-r6lj77KlwqLhIUku9UWYes7KJtsczvolZkzp8hbaDPPaE24OmWl5s539Mytlj22siEQKosZ26qCBgda2PKwoJw==
+
+mitt@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/mitt/-/mitt-3.0.1.tgz#ea36cf0cc30403601ae074c8f77b7092cdab36d1"
+  integrity sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==
 
 mkdirp@^0.5.1:
   version "0.5.5"
