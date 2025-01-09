@@ -101,7 +101,7 @@
     "diff": "5.1.0",
     "dompurify": "^3.0.0",
     "downsample": "1.4.0",
-    "echarts": "5.4.0",
+    "echarts": "5.6.0",
     "echarts-for-react": "3.0.2",
     "focus-trap": "^7.3.1",
     "focus-visible": "^5.2.0",
