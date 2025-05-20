@@ -7657,15 +7657,6 @@ loader-runner@^4.2.0:
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-4.2.0.tgz#d7022380d66d14c5fb1d496b89864ebcfd478384"
   integrity sha512-92+huvxMvYlMzMt0iIOukcwYBFpkYJdpl2xsZ7LrlayO7E8SOv+JJUEK17B/dJIHAOLMfh2dZZ/Y18WgmGtYNw==
 
-loader-utils@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
-  integrity sha1-yYrvSIvM7aL/teLeZG1qdUQp9c0=
-  dependencies:
-    big.js "^3.1.3"
-    emojis-list "^2.0.0"
-    json5 "^0.5.0"
-
 loader-utils@^0.2.5:
   version "0.2.17"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-0.2.17.tgz#f86e6374d43205a6e6c60e9196f17c0299bfb348"
@@ -7675,6 +7666,15 @@ loader-utils@^0.2.5:
     emojis-list "^2.0.0"
     json5 "^0.5.0"
     object-assign "^4.0.1"
+
+loader-utils@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.4.2.tgz#29a957f3a63973883eb684f10ffd3d151fec01a3"
+  integrity sha512-I5d00Pd/jwMD2QCduo657+YM/6L3KZu++pmX9VFncxaxvHcru9jx1lBaFft+r4Mt2jK0Yhp41XlRAihzPxHNCg==
+  dependencies:
+    big.js "^5.2.2"
+    emojis-list "^3.0.0"
+    json5 "^1.0.1"
 
 loader-utils@^2.0.0, loader-utils@^2.0.4:
   version "2.0.4"
@@ -8710,12 +8710,12 @@ platformicons@^5.4.0:
     "@types/node" "*"
     "@types/react" "*"
 
-po-catalog-loader@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/po-catalog-loader/-/po-catalog-loader-2.0.0.tgz#457baf768d34f144c75444e24daf8352cd052ccf"
-  integrity sha512-DrB9gVv9UsKmGOSC2zBYuQQFTCimum5gpY52Yz0WrpvcWr3LsYDY2gq8ZyJ9s2otH5nOsBnqnOr5EFERDz7b2Q==
+po-catalog-loader@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/po-catalog-loader/-/po-catalog-loader-2.1.0.tgz#3e64ab44b4dedf96b9276bcbdf39848f8a5bf2e6"
+  integrity sha512-pNDCnAUOmymm/5OTV3MG+3uy1ioBdYbkiiW4uf/ZJGbXZ5bnn5axjxXbLGG8YnRU8cWkGhbrAFkicSSL474bkw==
   dependencies:
-    loader-utils "1.1.0"
+    loader-utils "^1.4.2"
 
 popmotion@11.0.3:
   version "11.0.3"
