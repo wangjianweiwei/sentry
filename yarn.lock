@@ -8702,10 +8702,10 @@ platform@^1.3.3:
   resolved "https://registry.yarnpkg.com/platform/-/platform-1.3.6.tgz#48b4ce983164b209c2d45a107adb31f473a6e7a7"
   integrity sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==
 
-platformicons@^5.4.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/platformicons/-/platformicons-5.4.0.tgz#27ee813e4e1ce9e1bcf01a6e52c237520f4cc4e3"
-  integrity sha512-IzSW9Rn0lAqb6voHuaOtqNKaFHVO00Cm2cfLXOugye/em7xiFfAEL7mzeyYYZ1eTqiGSA+YO9ak+Psv+B6xAlg==
+platformicons@^8.0.8:
+  version "8.0.8"
+  resolved "https://registry.yarnpkg.com/platformicons/-/platformicons-8.0.8.tgz#203133903ea327c3d8b8a62e200f12f052f83237"
+  integrity sha512-FPZAxLqt+k61tHTFUbGeUt86Am4q5cJoFUq4zIFVyvf+FJDwz6OYGxH9QnhP9l425059Mw7FSUnctX9ES6sEzQ==
   dependencies:
     "@types/node" "*"
     "@types/react" "*"
