@@ -7590,10 +7590,10 @@ less-loader@^11.1.0:
   dependencies:
     klona "^2.0.4"
 
-less@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/less/-/less-4.1.3.tgz#175be9ddcbf9b250173e0a00b4d6920a5b770246"
-  integrity sha512-w16Xk/Ta9Hhyei0Gpz9m7VS8F28nieJaL/VyShID7cYvP6IL5oHeL6p4TXSDJqZE/lNv0oJ2pGVjJsRkfwm5FA==
+less@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/less/-/less-4.4.1.tgz#2f97168bf887ca6a9957ee69e16cc34f8b007cc7"
+  integrity sha512-X9HKyiXPi0f/ed0XhgUlBeFfxrlDP3xR4M7768Zl+WXLUViuL9AOPPJP4nCV0tgRWvTYvpNmN0SFhZOQzy16PA==
   dependencies:
     copy-anything "^2.0.1"
     parse-node-version "^1.0.1"
