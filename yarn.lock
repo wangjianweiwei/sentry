@@ -2261,10 +2261,10 @@
   dependencies:
     "@react-types/shared" "^3.16.0"
 
-"@sentry-internal/global-search@^0.5.7":
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/@sentry-internal/global-search/-/global-search-0.5.7.tgz#2749d24b01123b5d92f6326a33c5d4c81ec8c239"
-  integrity sha512-+fN8bsdXqo0nqppNR2JvZ5acEDKhVA/uCsE0jvLNcGqQgbr6JREbTje/nCCZNgoDwJ+BoTROALKIx/YBlhdp7g==
+"@sentry-internal/global-search@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/global-search/-/global-search-1.3.0.tgz#dc9147b1ea24b0e32cf792b8380fa4cd24a5e763"
+  integrity sha512-lUwbACWxzyVYZzQcwWSqDqbG8rJHjH0gtFlHKxLT8+fkF9tvmPI0pYN98njw+yKzpz+LPJk/W/RWKo0/Ez2TcQ==
   dependencies:
     "@types/react" ">=16"
     "@types/react-dom" ">=16"
