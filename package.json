@@ -82,7 +82,7 @@
     "@types/reflux": "0.4.1",
     "@types/scroll-to-element": "^2.0.2",
     "@types/webpack-env": "^1.18.0",
-    "ansi-to-react": "^6.1.6",
+    "ansi-to-react": "^6.2.6",
     "babel-loader": "^9.1.2",
     "babel-plugin-add-react-displayname": "^0.0.5",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
